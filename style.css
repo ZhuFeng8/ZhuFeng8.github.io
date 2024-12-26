@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson&display=swap');
 * {box-sizing: border-box;}
-h2, h3, p {margin: 0;}
+h1, h2, h3, p {margin: 0;}
 img {
     width: 100%;
     display: block;
@@ -9,31 +9,52 @@ video {
     width: 100%;
     display: block;
 }
-.warp {
-    font-family: sans-serif;
+body {
     background: #353535;
+    margin: 0;
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
 }
 header {
     height: 60px;
+    padding: 0px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: white;
 }
-.logo {
+header a {
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+header h1 {
+    margin-right: 50px;
     font-size: 24px;
     font-weight: 700;
-    margin-left: 86.5px;
-    margin-right: 50px;
+}
+ul.button {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+}
+ul.button a {
+    padding: 5px 10px;
+}
+.logo {
     display: flex;
     align-items: center;
     gap: 7px;
 }
 .logo-image {
-    width: 30px; height: 30px;
+    width: 40px; height: 40px;
 }
 .button {
-    margin-right: 86.5px;
     font-size: 14px;
     font-weight: 400;
     display: flex;
@@ -44,25 +65,24 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #353535;
 }
 section {
-    height: 940px;
-    padding: 90px 155px;
+    padding: 5% 0px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
     gap: 60px;
-    background: #353535;
 }
 .card {
     color: white;
     width: 300px; height: 340px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
 }
 .card-image {
     width: 250px; height: 250px;
