@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-
 }
 header {
     height: 60px;
